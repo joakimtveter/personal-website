@@ -1,0 +1,43 @@
+/* STYLE RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES */
+:root {
+  --color-text: #141414;
+  --color-primary: #0d21a1;
+  --color-accent: #d90368;
+  --color-bg: #fafafa;
+}
+
+/* DARK MODE */
+body .dark-mode {
+  --color-text: #fafafa;
+  --color-primary: #0d21a1;
+  --color-accent: #d90368;
+  --color-bg: #141414;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-text: #fafafa;
+    --color-primary: #0d21a1;
+    --color-accent: #d90368;
+    --color-bg: #141414;
+  }
+}
+
+/* REUSABLE STYLES */
+body {
+  color: #333333;
+  background-color: var(--color-bg);
+}
+
+.accent-color {
+  color: var(--color-accent);
+}
