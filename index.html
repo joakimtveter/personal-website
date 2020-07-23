@@ -10,20 +10,50 @@
     />
     <meta name="description" content="Webutvikler og UX-designer lokalisert i Stavangerområdet" />
     <title>Joakim Tveter - UX-designer & Webutvikler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <main class="main">
+    <header>
+      <div class="theme-toggle-container">
+        <div class="theme-toggle">
+          <input type="radio" name="toggle" value="light" />
+          <label class="toggle toggle-yes"><i class="fas fa-sun"></i></label>
+          <input checked type="radio" name="toggle" value="auto" />
+          <label class="toggle toggle-yes"><i class="fas fa-adjust"></i></label>
+          <input type="radio" name="toggle" value="dark" />
+          <label class="toggle toggle-yes"><i class="fas fa-moon"></i></label>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main id="main-content" class="main-content">
       <section itemscope itemtype="http://schema.org/Person" id="introduction" class="introduction">
         <img itemprop="image" class="profile-img" src="/content/images/Joakim-Tveter.jpg" alt="" />
-        <h1 itemprop="name" class="name">Joakim <span class="lName accent-color">Tveter</span></h1>
+        <h1 itemprop="name" class="name">Joakim Tveter</h1>
         <p itemprop="jobTitle" class="job-title">UX-designer &amp; Webutvikler</p>
+        <p class="profile--description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+        <div class="button-wrapper-2">
+          <button class="btn btn-primary-outline">Kontakt meg</button>
+          <button class="btn btn-primary-outline">Last ned CV</button>
+        </div>
         <div class="social-links">
           <a href="https://twitter.com/JoakimTveter" class="social-link twitter">
             <img src="content/icons/Twitter-Mark.svg" alt="" height="50px" />
           </a>
           <a href="https://www.linkedin.com/in/joakim-tveter/" class="social-link linkedin">
-            <img src="content/icons/Linkedin-Mark.svg" alt="" height="50px" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+              <path
+                class="linkedin"
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
           </a>
           <a href="https://github.com/joakimtveter" class="social-link instagram">
             <img src="content/icons/Instagram-Mark.svg" alt="" height="50px" />
@@ -48,20 +78,164 @@
       </section>
       <section id="projects" class="section-projects">
         <h1 class="section-h1">Prosjekter</h1>
-        <ul>
-          <li>Prosjekt 1</li>
-          <li>Prosjekt 2</li>
-          <li>Prosjekt 3</li>
-        </ul>
+        <div class="projects">
+          <article class="project">
+            <img class="project-img" src="content/images/Joakim-Tveter.jpg" alt="" />
+            <h2 class="project-title">Project title</h2>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </article>
+          <article class="project">
+            <img class="project-img" src="content/images/Joakim-Tveter.jpg" alt="" />
+            <h2 class="project-title">Project title</h2>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </article>
+          <article class="project">
+            <img class="project-img" src="content/images/Joakim-Tveter.jpg" alt="" />
+            <h2 class="project-title">Project title</h2>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </article>
+        </div>
       </section>
       <section id="certificates" class="section-certificates">
-        <h1 class="section-h1">Prosjekter</h1>
-        <ul>
-          <li>Prosjekt 1</li>
-          <li>Prosjekt 2</li>
-          <li>Prosjekt 3</li>
-        </ul>
+        <h1 class="section-h1">Kurs og sertifikater</h1>
+        <article class="certificate--item">
+          <h2 class="certificate--title"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"> The complete web development bootcamp</h2></a>
+          <small class="certificate--type">Nettbasert kurs - 35 timer</small>
+          <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
+          <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/"> Dr. Angela Yu </a></p>
+          <p class="certificate--progress">
+            <span class="bolded">Status:</span
+            ><meter id="course-1" value="55" min="0" max="100">55% fullført</meter> 55% fullført
+          </p>
+          <article class="certificate--item">
+            <h2 class="certificate--title"><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/">The Complete Web Developer: Zero to Mastery</a></h2>
+            <small class="certificate--type">Nettbasert kurs - 54 timer</small>
+            <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
+            <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/andrei-neagoie/">Andrei Neagoie</a></p>
+            <p class="certificate--progress">
+              <span class="bolded">Status:</span
+              ><meter id="course-2" value="55" min="0" max="100">55% fullført</meter> 55% fullført
+            </p>
+          </article>
+          <article class="certificate--item">
+            <h2 class="certificate--title">Become a Front-End Web Developer</h2>
+            <small class="certificate--type">Nettbasert kursløype - 34,5 timer</small>
+            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 28.06.2020</p>
+            <a
+              class="certificate--dowload"
+              href="content/documents/CoC-LL-LP-Become-a-Front-End-Web-Developer.pdf"
+              download
+              >Last ned diplom</a
+            >
+          </article>
+          <article class="certificate--item">
+            <h2 class="certificate--title">Become a Web Designer</h2>
+            <small class="certificate--type">Nettbasert kursløype - 28,5 timer</small>
+            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 25.06.2020</p>
+            <a class="certificate--dowload" href="content/documents/CoC-LL-LP-Become-a-Web-Designer.pdf" download
+              >Last ned diplom</a
+            >
+          </article>
+          <article class="certificate--item">
+            <h2 class="certificate--title">Become a Web Developer</h2>
+            <small class="certificate--type">Nettbasert kursløype - 20 timer</small>
+            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 14.06.2020</p>
+            <a class="certificate--dowload" href="content/documents/CoC-LL-LP-Become-a-Web-Developer.pdf" download
+              >Last ned diplom</a
+            >
+          </article>
+        </article>
+        <article class="certificate--item">
+          <h2 class="certificate--title"><a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"> Design and develop a killer website with HTML5 and CSS3</h2></a>
+          <small class="certificate--type">Nettbasert kurs - 12 timer</small>
+          <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
+          <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/jonasschmedtmann/"> Jonas Schmedtmann</a></p>
+          <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 26.03.2020</p>
+          <a
+            class="certificate--dowload"
+            href="content/documents/CoC-Udemy-Design-and-develop-a-killer-website-with-HTML5-and-CSS3.pdf"
+            download
+            >Last ned diplom</a
+          >
+        </article>
+      </section>
+      <section id="experience" class="section-experience">
+        <h1 class="section-h1">Arbeidserfaring</h1>
+        <article class="experience--item">
+          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
+          <div>
+            <h2 class="experience--job-tile">Job title</h2>
+            <small class="experience--company">Firmanavn AS</small>
+            <p class="experience--desciption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+        <article class="experience--item">
+          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
+          <div>
+            <h2 class="experience--job-tile">Job title</h2>
+            <small class="experience--company">Firmanavn AS</small>
+            <p class="experience--desciption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+        <article class="experience--item">
+          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
+          <div>
+            <h2 class="experience--job-tile">Job title</h2>
+            <small class="experience--company">Firmanavn AS</small>
+            <p class="experience--desciption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="section-contact">
+        <h1 class="section-h1">Kontakt meg</h1>
+        <div class="button-wrapper-2">
+          <button class="btn btn-primary-outline">Ring meg</button>
+          <button class="btn btn-primary-outline">Send meg en epost</button>
+        </div>
+        <form action="post">
+          <label for="name">Ditt Navn:</label>
+          <input id="name" type="text" /> <br />
+          <label for="email">Din E-postdaresse:</label>
+          <input id="email" type="email" /> <br />
+          <label for="phone">Din E-postdaresse:</label>
+          <input id="phone" type="tel" /> <br />
+          <label for="message">Din E-postdaresse:</label>
+          <textarea id="message"></textarea> <br />
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
       </section>
     </main>
+    <footer id="footer">
+      <section class="copy-right-footer">
+        <p class="copy-right-text">
+          &copy;
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          Joakim Tveter
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
