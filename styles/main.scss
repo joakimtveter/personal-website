@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto:wght@400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -7,22 +9,61 @@
 }
 
 :root {
+  --ff-body: "Roboto", Arial, Helvetica, sans-serif;
+  --ff-heading: "Montserrat", Arial, Helvetica, sans-serif;
+  --fw-body: 400;
+  --fw-body-bold: 700;
+  --fw-heading: 700;
+  --fw-heading-thin: 300;
+
   --palet-white: #fafafa;
   --palet-black: #030303;
-  --palet-lightgrey: #adacac;
-  --palet-primary: blue;
-  --palet-accent: lightblue;
+  --palet-light-grey: #dadada;
+  --palet-medium-grey: #999999;
+  --palet-dark-grey: #333333;
+  --palet-primary-dark: #03045e;
+  --palet-primary: #023e8a;
+  --palet-primary-light: #00b4d8;
+  --palet-accent: #efbdeb;
 
   --clr-bg-light: var(--palet-white);
-  --clr-bg-dark: var(--palet-lightgrey);
+  --clr-bg-dark: var(--palet-light-grey);
+  --clr-bg-black: var(--palet-black);
   --clr-txt: var(--palet-black);
+  --clr-primary-dark: var(--palet-primary-dark);
   --clr-primary: var(--palet-primary);
+  --clr-primary-light: var(--palet-primary-light);
   --clr-acc: var(--palet-accent);
+  --clr-txt-light: var(--palet-white);
 }
 
 body {
   background-color: var(--clr-bg-light);
   color: var(--clr-txt);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body);
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  margin-top: 0.5em;
+}
+
+h1 {
+  font-weight: var(--fw-heading-thin);
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-heading);
+}
+
+.bolded {
+  font-weight: 700;
 }
 
 main {
@@ -43,64 +84,31 @@ img {
   width: 100%;
 }
 
+.section-icon {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: var(--clr-primary);
+  margin-top: 1.5rem;
+}
+
 .section-h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.7rem;
   position: relative;
-  margin-top: 1em;
+  margin-top: 0;
   margin-bottom: 1em;
 }
 
 .section-h1::after {
   content: " ";
   height: 3px;
-  background-color: var(--clr-acc);
+  background-color: var(--clr-primary);
   width: 20%;
   left: 40%;
   bottom: -5px;
   position: absolute;
-}
-
-.bolded {
-  font-weight: bold;
-}
-
-/* PROFILE SECTION*/
-.profile-img {
-  width: 250px;
-  border-radius: 50%;
-  margin: 2em auto 0;
-  display: block;
-}
-
-.name {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 1rem;
-}
-
-.job-title {
-  text-align: center;
-  margin-bottom: 1em;
-}
-.social-links {
-  display: flex;
-  margin: 0 5px;
-  justify-content: space-between;
-  padding: 0 2em;
-}
-
-.social-link {
-  text-decoration: none;
-}
-
-.social-link:hover img {
-  color: red;
-}
-
-.linkedin {
-  fill: red;
 }
 
 .btn {
@@ -142,15 +150,84 @@ img {
   width: 0%;
 }
 
+/* PROFILE SECTION*/
+.profile-img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 2em auto 0;
+  display: block;
+}
+
+.name {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+}
+
+.profile-description {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  margin: 0 5px;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.fab {
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-linkedin-in {
+  color: #0e76a8;
+}
+.fa-instagram {
+  color: #833ab4; // linear-gradient(#e66465, #9198e5);
+}
+.fa-github {
+  color: #24292e;
+}
+
+.fab:hover {
+  color: var(--clr-primary);
+}
+
 /* SKILLS SECTION*/
 
 /* PROJECT SECTION*/
+.project {
+  margin-bottom: 1rem;
+}
 
 /* CERTIFICATION SECTION*/
 .certificate--title > a {
   color: var(--clr-txt);
   text-decoration: none;
 }
+
+meter {
+  color: blue;
+  background-color: blue;
+}
+
 /* CONTACT SECTION*/
 input,
 textarea {
@@ -159,7 +236,17 @@ textarea {
 }
 
 textarea {
-  height: ;
+  height: 6em;
+}
+/* FOOTER SECTION*/
+footer {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-txt-light);
+}
+
+.copyright-text {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* THEME TOGGLE*/

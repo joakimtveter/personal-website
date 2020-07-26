@@ -28,43 +28,36 @@
       </div>
     </header>
     <main id="main-content" class="main-content">
-      <section itemscope itemtype="http://schema.org/Person" id="introduction" class="introduction">
+      <section itemscope itemtype="http://schema.org/Person" id="profile" class="profile">
         <img itemprop="image" class="profile-img" src="/content/images/Joakim-Tveter.jpg" alt="" />
         <h1 itemprop="name" class="name">Joakim Tveter</h1>
         <p itemprop="jobTitle" class="job-title">UX-designer &amp; Webutvikler</p>
-        <p class="profile--description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+        <p class="profile-description">
+          Min drøm er å utvikle fantastiske og universellt utformede brukeropplevelser på både digitale og analoge flater. <br>
+          Jeg har en bred bakgrund fra industri, service- og teknologi-bransjen, noe som gir meg et unikt perspektiv. 
         </p>
         <div class="button-wrapper-2">
-          <button class="btn btn-primary-outline">Kontakt meg</button>
-          <button class="btn btn-primary-outline">Last ned CV</button>
+          <button class="btn btn-primary"><i class="fas fa-cloud-download-alt"></i> Last ned CV</button>
+          <a href="#contact"><button class="btn btn-primary-outline"><i class="fas fa-tty"></i> Kontakt meg</button></a>
         </div>
         <div class="social-links">
           <a href="https://twitter.com/JoakimTveter" class="social-link twitter">
-            <img src="content/icons/Twitter-Mark.svg" alt="" height="50px" />
+            <i class="fab fa-twitter"></i>
           </a>
           <a href="https://www.linkedin.com/in/joakim-tveter/" class="social-link linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
-              <path
-                class="linkedin"
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              />
-            </svg>
+            <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/joakimtveter" class="social-link instagram">
-            <img src="content/icons/Instagram-Mark.svg" alt="" height="50px" />
+            <i class="fab fa-instagram"></i>
           </a>
           <a href="https://github.com/joakimtveter" class="social-link github">
-            <img src="content/icons/GitHub-Mark.svg" alt="" height="50px" />
+            <i class="fab fa-github"></i>
           </a>
         </div>
       </section>
       <section id="skills" class="section-skills">
-        <h1 class="section-h1">Ferdigheter</h1>
+        <div class="section-icon"><i class="fas fa-user-graduate"></i></div>
+        <h1 class="section-h1">Mine Ferdigheter</h1>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -77,15 +70,17 @@
         </ul>
       </section>
       <section id="projects" class="section-projects">
-        <h1 class="section-h1">Prosjekter</h1>
+        <div class="section-icon"><i class="fas fa-th"></i></div>
+        <h1 class="section-h1">Mine Prosjekter</h1>
         <div class="projects">
           <article class="project">
-            <img class="project-img" src="content/images/Joakim-Tveter.jpg" alt="" />
-            <h2 class="project-title">Project title</h2>
+            <img class="project-img" src="content/images/bondesjakk.jpg" alt="" />
+            <h2 class="project-title">Bondesjakk</h2>
             <p class="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Et lite bondesjakk spill utviklet i standard JavaScript. Dette var mitt første JavaScript-prosjekt.
             </p>
+            <div class="project-link"><a href="http://joakimtveter.no/bondesjakk">Spill Bodesjakk</a> </div>
+            <div class="project-repo-link"><a href="https://github.com/joakimtveter/bondeskjakk">Se prosjektet på GitHub</a></div>
           </article>
           <article class="project">
             <img class="project-img" src="content/images/Joakim-Tveter.jpg" alt="" />
@@ -106,30 +101,31 @@
         </div>
       </section>
       <section id="certificates" class="section-certificates">
-        <h1 class="section-h1">Kurs og sertifikater</h1>
+        <div class="section-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h1 class="section-h1">Kurs og sertifiseringer</h1>
         <article class="certificate--item">
           <h2 class="certificate--title"><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"> The complete web development bootcamp</h2></a>
           <small class="certificate--type">Nettbasert kurs - 35 timer</small>
-          <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
-          <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/"> Dr. Angela Yu </a></p>
+          <p><span class="bolded">Leverandør: </span>Udemy.com</p>
+          <p><span class="bolded">Instruktør: </span>Dr. Angela Yu</p>
           <p class="certificate--progress">
-            <span class="bolded">Status:</span
-            ><meter id="course-1" value="55" min="0" max="100">55% fullført</meter> 55% fullført
+            <span class="bolded">Status: </span
+            ><meter id="course-1" value="55" min="0" max="100" title="55% fullført"></meter> 55% fullført
           </p>
           <article class="certificate--item">
             <h2 class="certificate--title"><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/">The Complete Web Developer: Zero to Mastery</a></h2>
             <small class="certificate--type">Nettbasert kurs - 54 timer</small>
-            <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
-            <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/andrei-neagoie/">Andrei Neagoie</a></p>
+            <p><span class="bolded">Leverandør: </span>Udemy.com</p>
+            <p><span class="bolded">Instruktør: </span>Andrei Neagoie</p>
             <p class="certificate--progress">
-              <span class="bolded">Status:</span
-              ><meter id="course-2" value="55" min="0" max="100">55% fullført</meter> 55% fullført
+              <span class="bolded">Status: </span
+              ><meter id="course-2" value="55" min="0" max="100" title="55% fullført"></meter> 55% fullført
             </p>
           </article>
           <article class="certificate--item">
-            <h2 class="certificate--title">Become a Front-End Web Developer</h2>
+            <h2 class="certificate--title"><a href="https://www.linkedin.com/learning/paths/become-a-front-end-web-developer">Become a Front-End Web Developer</a></h2>
             <small class="certificate--type">Nettbasert kursløype - 34,5 timer</small>
-            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p><span class="bolded">Leverandør: </span>Linked-in Learning</p>
             <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 28.06.2020</p>
             <a
               class="certificate--dowload"
@@ -139,18 +135,18 @@
             >
           </article>
           <article class="certificate--item">
-            <h2 class="certificate--title">Become a Web Designer</h2>
+            <h2 class="certificate--title"><a href="https://www.linkedin.com/learning/paths/become-a-web-designer">Become a Web Designer</a></h2>
             <small class="certificate--type">Nettbasert kursløype - 28,5 timer</small>
-            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p><span class="bolded">Leverandør :</span>Linked-in Learning</p>
             <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 25.06.2020</p>
             <a class="certificate--dowload" href="content/documents/CoC-LL-LP-Become-a-Web-Designer.pdf" download
               >Last ned diplom</a
             >
           </article>
           <article class="certificate--item">
-            <h2 class="certificate--title">Become a Web Developer</h2>
+            <h2 class="certificate--title"><a href="https://www.linkedin.com/learning/paths/become-a-web-developer">Become a Web Developer</a></h2>
             <small class="certificate--type">Nettbasert kursløype - 20 timer</small>
-            <p><span class="bolded">Leverandør:</span> <a href="https://www.linkedin.com/learning/"> Linked-in Learning </a></p>
+            <p><span class="bolded">Leverandør: </span>Linked-in Learning</p>
             <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 14.06.2020</p>
             <a class="certificate--dowload" href="content/documents/CoC-LL-LP-Become-a-Web-Developer.pdf" download
               >Last ned diplom</a
@@ -160,8 +156,8 @@
         <article class="certificate--item">
           <h2 class="certificate--title"><a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"> Design and develop a killer website with HTML5 and CSS3</h2></a>
           <small class="certificate--type">Nettbasert kurs - 12 timer</small>
-          <p><span class="bolded">Leverandør: </span><a href="http://udemy.com">Udemy.com</a></p>
-          <p><span class="bolded">Instruktør:</span> <a href="https://www.udemy.com/user/jonasschmedtmann/"> Jonas Schmedtmann</a></p>
+          <p><span class="bolded">Leverandør: </span>Udemy.com</p>
+          <p><span class="bolded">Instruktør: </span>Jonas Schmedtmann</p>
           <p class="certificate--progress"><span class="bolded">Status:</span> Fullført 26.03.2020</p>
           <a
             class="certificate--dowload"
@@ -171,64 +167,72 @@
           >
         </article>
       </section>
-      <section id="experience" class="section-experience">
+      <section id="experience" class="experience-section">
+        <div class="section-icon"><i class="fas fa-briefcase"></i></div>
         <h1 class="section-h1">Arbeidserfaring</h1>
         <article class="experience--item">
-          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
-          <div>
-            <h2 class="experience--job-tile">Job title</h2>
-            <small class="experience--company">Firmanavn AS</small>
-            <p class="experience--desciption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </div>
+          <div class="experience--dates">Oktober 2017 - </div>
+          <h2 class="experience--job-tile">Prosjektleder</h2>
+          <small class="experience--company">Front Software AS</small>
+          <p class="experience--desciption">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <h3 class="experience--sub-title">Prosjektleder WordPress</h3>
+          <p class="experience--sub-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+            <h3 class="experience--sub-title">Produktansvarlig Ageto</h3>
+            <p class="experience--sub-description">Ageto er et internkontrollsystem for HoReCa bransjen. Noen av funksjonene i Ageto omfatter blandt annet; trådløse temperatursensorer for frysere og kjøleskap, manuelle temperaturmålinger, oppgavelister, vaktplanlegging og timeregistering. Mine oppgaver inkluderer opplæring av kunder, brukerstøtte, installasjon av maskinvare, viderutvikling av maskinvare, prosjektledelse programvareutvikling</p>
         </article>
-        <article class="experience--item">
-          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
-          <div>
-            <h2 class="experience--job-tile">Job title</h2>
-            <small class="experience--company">Firmanavn AS</small>
-            <p class="experience--desciption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </div>
-        </article>
-        <article class="experience--item">
-          <div class="experience--dates">02.01.2020 - 01.02.2020</div>
-          <div>
-            <h2 class="experience--job-tile">Job title</h2>
-            <small class="experience--company">Firmanavn AS</small>
-            <p class="experience--desciption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </div>
-        </article>
+        <button>Se flere arbeidserfaringer</button>
+        <div id="experience-expanded" class="experience-drawer">
+          <article class="experience--item">
+            <div class="experience--dates">September 2016 - Februar 2017</div>
+            <div>
+              <h2 class="experience--job-tile">Job title</h2>
+              <small class="experience--company">Al Forno Bystasjonen - Food Heaven Sandnes AS</small>
+              <p class="experience--desciption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </article>
+          <article class="experience--item">
+            <div class="experience--dates">02.01.2020 - 01.02.2020</div>
+            <div>
+              <h2 class="experience--job-tile">Job title</h2>
+              <small class="experience--company">Firmanavn AS</small>
+              <p class="experience--desciption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
-      <section id="contact" class="section-contact">
+      <section id="contact" class="contact-section">
+        <div class="section-icon"><i class="fas fa-tty"></i></div>
         <h1 class="section-h1">Kontakt meg</h1>
         <div class="button-wrapper-2">
           <button class="btn btn-primary-outline">Ring meg</button>
           <button class="btn btn-primary-outline">Send meg en epost</button>
         </div>
-        <form action="post">
+        <form id="contact-form" method="POST" action="#">
           <label for="name">Ditt Navn:</label>
           <input id="name" type="text" /> <br />
           <label for="email">Din E-postdaresse:</label>
           <input id="email" type="email" /> <br />
-          <label for="phone">Din E-postdaresse:</label>
+          <label for="phone">Ditt telefonummer:</label>
           <input id="phone" type="tel" /> <br />
-          <label for="message">Din E-postdaresse:</label>
+          <label for="message">Melding:</label>
           <textarea id="message"></textarea> <br />
           <button class="btn btn-primary" type="submit">Send</button>
         </form>
       </section>
     </main>
     <footer id="footer">
-      <section class="copy-right-footer">
-        <p class="copy-right-text">
+      <section class="copyright-footer">
+        <p class="copyright-text">
           &copy;
           <script type="text/javascript">
             document.write(new Date().getFullYear());
