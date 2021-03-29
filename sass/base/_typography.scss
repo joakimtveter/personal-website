@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto:wght@400;700&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  margin-top: 0.5em;
+}
+
+h1 {
+  font-weight: var(--fw-heading-thin);
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-heading);
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+.bolded {
+  font-weight: 700;
+}

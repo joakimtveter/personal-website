@@ -1,0 +1,128 @@
+/* SKILLS SECTION*/
+.skill-list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.skill-list > li {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+/* PROJECT SECTION*/
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .project {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  
+  .project-img {
+    object-fit: scale-down;
+  }
+  .project-status-development {
+    display: block;
+    color: red;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 8px auto;
+    width: max-content;
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .projects {
+      flex-direction: row;
+    }
+    .project {
+      width: 33%;
+    }
+  }
+
+/* CERTIFICATION SECTION*/
+.certificate--title > a {
+    color: var(--clr-txt);
+    text-decoration: none;
+  }
+  
+.certificate--type {
+    color: white;
+    background-color: var(--clr-primary);
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 27px;
+    margin-top: auto;
+  }
+@media only screen and (min-width: 800px) {
+    .certificate--header {
+      display: flex;
+      gap: 1.5rem;
+    }
+  
+    .certificate--info {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+
+/* EXPERIENCE SECTION*/
+.experience--item {
+    margin-bottom: 2rem;
+  }
+  
+.experience--job-tile {
+    margin-top: 0;
+  }
+  
+.experience--company {
+    font-weight: bold;
+  }
+  
+.experience--desciption {
+    margin-top: 0.5rem;
+  }
+  
+.experience--item ul {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    list-style: circle;
+  }
+  
+.txt-link-btn {
+    margin-top: 1rem;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--clr-txt);
+    font-size: 1.2rem;
+  }
+  
+.hideable.hidden {
+    display: none;
+    opacity: 0;
+  }  
+
+/* CONTACT SECTION*/
+input,
+textarea {
+  width: 100%;
+  padding: 1em 0.5em;
+}
+
+textarea {
+  height: 6em;
+}

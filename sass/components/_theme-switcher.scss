@@ -1,0 +1,51 @@
+.theme-switcher-container {
+    width: 7rem;
+    margin-top: 2px;
+    margin-right:15px;
+    margin-left:auto;
+  }
+  
+  .theme-switcher {
+    background-color: black;
+    border-radius: 2.2rem;
+    padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+    }
+  
+  .theme-switcher-container svg {
+    fill: rgb(242, 242, 242);
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.2rem;
+  }
+  
+  input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  }
+  
+  input[type="radio"] + svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  }
+  
+  input + svg {
+  cursor: pointer;
+  }
+  
+  input[class="night"]:hover + svg,
+  input[class="night"]:checked + svg,
+  input[class="night"]:focus + svg {
+  fill: rgb(0, 109, 217);
+  }
+  
+  input[class="auto"]:hover + svg,
+  input[class="auto"]:checked + svg,
+  input[class="auto"]:focus + svg {
+  fill: rgb(0, 204, 79);
+  }
+  
+  input[class="light"]:hover + svg,
+  input[class="light"]:checked + svg,
+  input[class="light"]:focus + svg {
+  fill: rgb(232, 214, 0);
+  }
