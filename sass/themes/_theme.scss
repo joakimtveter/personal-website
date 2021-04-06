@@ -1,0 +1,74 @@
+// CUSTOM PROPERTIES
+
+:root {
+    --clr-bg-light: #{$white};
+    --clr-bg-dark: #{$light-grey};
+    --clr-bg-black: #{$black};
+    --clr-txt: #{$black};
+    --clr-primary-dark: #{$primary-dark};
+    --clr-primary: #{$primary};
+    --clr-primary-light: #{$primary-light};
+    --clr-acc: #{$accent};
+    --clr-txt-light: #{$white};
+    --clr-card-bg: white;
+    --clr-card-border: #{$medium-grey};
+}
+
+:root.light-mode {
+    --clr-bg-light: #{$white};
+    --clr-bg-dark: #{$light-grey};
+    --clr-bg-black: #{$black};
+    --clr-txt: #{$black};
+    --clr-primary-dark: #{$primary-dark};
+    --clr-primary: #{$primary};
+    --clr-primary-light: #{$primary-light};
+    --clr-acc: #{$accent};
+    --clr-txt-light: #{$white};
+    --clr-card-bg: white;
+    --clr-card-border: #{$medium-grey};
+}
+    
+:root.dark-mode {
+    --clr-bg-light: #{$black};
+    --clr-bg-dark: #{$dark-grey};
+    --clr-bg-black: #{$black};
+    --clr-txt: #{$white};
+    --clr-primary-dark: #{$primary-light};
+    --clr-primary: #{$primary};
+    --clr-primary-light: #{$primary-dark};
+    --clr-acc: #{$accent};
+    --clr-txt-light:  #{$black};
+    --clr-card-bg: #{$dark-grey};
+    --clr-card-border:  #{$black};
+}
+    
+:root.auto-mode{
+    // AUTO LIGHT MODE
+    @media (prefers-color-scheme: light) {
+        --clr-bg-light: #{$white};
+        --clr-bg-dark: #{$light-grey};
+        --clr-bg-black: #{$black};
+        --clr-txt: #{$black};
+        --clr-primary-dark: #{$primary-dark};
+        --clr-primary: #{$primary};
+        --clr-primary-light: #{$primary-light};
+        --clr-acc: #{$accent};
+        --clr-txt-light: #{$white};
+        --clr-card-bg: white;
+        --clr-card-border: #{$medium-grey};
+    }
+    // AUTO DARKMODE 
+    @media (prefers-color-scheme: dark) {
+        --clr-bg-light: #{$black};
+        --clr-bg-dark: #{$dark-grey};
+        --clr-bg-black: #{$black};
+        --clr-txt: #{$white};
+        --clr-primary-dark: #{$primary-light};
+        --clr-primary: #{$primary};
+        --clr-primary-light: #{$primary-dark};
+        --clr-acc: #{$accent};
+        --clr-txt-light:  #{$black};
+        --clr-card-bg: #{$dark-grey};
+        --clr-card-border:  #{$black};
+    }
+}

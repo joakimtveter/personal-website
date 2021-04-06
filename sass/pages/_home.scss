@@ -1,3 +1,65 @@
+/* PROFILE SECTION*/
+.profile-img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 2em auto 0;
+  display: block;
+}
+
+.name {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  font-family: $ff-heading;
+  font-weight: $fw-heading;
+}
+
+.profile-description {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links {
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto 1em;
+  justify-content: space-between;
+}
+
+.social-link {
+  text-decoration: none;
+  padding: 0 2em;
+}
+
+.fab {
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-linkedin-in {
+  color: #0e76a8;
+}
+
+.fa-github {
+  color: #24292e;
+}
+
+.fab:hover {
+  color: var(--clr-primary);
+}
+
+
 /* SKILLS SECTION*/
 .skill-list {
     display: flex;

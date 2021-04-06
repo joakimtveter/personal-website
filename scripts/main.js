@@ -1,21 +1,35 @@
-// Theme switcher
+// THEME SWITCHER
 const html = document.querySelector("html")
 const nightMode = document.querySelector("#night")
 const autoMode = document.querySelector("#auto")
 const lightMode = document.querySelector("#light")
 
+// Check local storage for previous setting 
+document.addEventListener("DOMContentLoaded", () => {
+  let theme = localStorage.getItem('theme');
+  if (theme == "dark-mode"){
+    nightMode.checked = true;
+  }
+  if (theme == "light-mode"){
+    lightMode.checked = true;
+  }
+} )
+
 
 nightMode.addEventListener("click", () => { 
     html.classList.remove("light-mode", "auto-mode")
     html.classList.add("dark-mode")
+    localStorage.setItem('theme', 'dark-mode');
 })
 autoMode.addEventListener("click", () => { 
     html.classList.remove("light-mode", "dark-mode")
     html.classList.add("auto-mode")
+    localStorage.setItem('theme', 'auto-mode');
 })
 lightMode.addEventListener("click", () => { 
     html.classList.remove("auto-mode", "dark-mode")
     html.classList.add("light-mode")
+    localStorage.setItem('theme', 'light-mode');
 })
 
 

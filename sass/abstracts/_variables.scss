@@ -1,91 +1,22 @@
-// CUSTOM PROPERTIES
-:root {
-    --ff-body: "Roboto", Arial, Helvetica, sans-serif;
-    --ff-heading: "Montserrat", Arial, Helvetica, sans-serif;
-    --fw-body: 400;
-    --fw-body-bold: 700;
-    --fw-heading: 700;
-    --fw-heading-thin: 300;
-  
-    --palet-white: #fafafa;
-    --palet-black: #030303;
-    --palet-light-grey: #dadada;
-    --palet-medium-grey: #999999;
-    --palet-dark-grey: #333333;
-    --palet-primary-dark: #03045e;
-    --palet-primary: #023e8a;
-    --palet-primary-light: #00b4d8;
-    --palet-accent: #efbdeb;
-  
-    --clr-bg-light: var(--palet-white);
-    --clr-bg-dark: var(--palet-light-grey);
-    --clr-bg-black: var(--palet-black);
-    --clr-txt: var(--palet-black);
-    --clr-primary-dark: var(--palet-primary-dark);
-    --clr-primary: var(--palet-primary);
-    --clr-primary-light: var(--palet-primary-light);
-    --clr-acc: var(--palet-accent);
-    --clr-txt-light: var(--palet-white);
-    --clr-card-bg: white;
-    --clr-card-border: var(--palet-medium-grey);
-    }
+// VARIABLES
 
-:root.light-mode {
-    --clr-bg-light: var(--palet-white);
-    --clr-bg-dark: var(--palet-light-grey);
-    --clr-bg-black: var(--palet-black);
-    --clr-txt: var(--palet-black);
-    --clr-primary-dark: var(--palet-primary-dark);
-    --clr-primary: var(--palet-primary);
-    --clr-primary-light: var(--palet-primary-light);
-    --clr-acc: var(--palet-accent);
-    --clr-txt-light: var(--palet-white);
-    --clr-card-bg: white;
-    --clr-card-border: var(--palet-medium-grey);
-    }
-    
-:root.dark-mode {
---clr-bg-light: var(--palet-black);
---clr-bg-dark: var(--palet-dark-grey);
---clr-bg-black: var(--palet-white);
---clr-txt: var(--palet-white);
---clr-primary-dark: var(--palet-primary-dark);
---clr-primary: var(--palet-primary);
---clr-primary-light: var(--palet-primary-light);
---clr-acc: var(--palet-accent);
---clr-txt-light: var(--palet-black);
---clr-card-bg: var();
---clr-card-border: var(--palet-medium-grey);
-    }
-    
-    :root.auto-mode{
-    // AUTO LIGHT MODE
-    @media (prefers-color-scheme: light) {
-        --clr-bg-light: var(--palet-white);
-        --clr-bg-dark: var(--palet-light-grey);
-        --clr-bg-black: var(--palet-black);
-        --clr-txt: var(--palet-black);
-        --clr-primary-dark: var(--palet-primary-dark);
-        --clr-primary: var(--palet-primary);
-        --clr-primary-light: var(--palet-primary-light);
-        --clr-acc: var(--palet-accent);
-        --clr-txt-light: var(--palet-white);
-        --clr-card-bg: white;
-        --clr-card-border: var(--palet-medium-grey);
-    }
-    // AUTO DARKMODE 
-    @media (prefers-color-scheme: dark) {
-        --clr-bg-light: var(--palet-black);
-        --clr-bg-dark: var(--palet-dark-grey);
-        --clr-bg-black: var(--palet-white);
-        --clr-txt: var(--palet-white);
-        --clr-primary-dark: var(--palet-primary-dark);
-        --clr-primary: var(--palet-primary);
-        --clr-primary-light: var(--palet-primary-light);
-        --clr-acc: var(--palet-accent);
-        --clr-txt-light: var(--palet-black);
-        --clr-card-bg: var();
-        --clr-card-border: var(--palet-medium-grey);
-    }
-    }
+$white: #fafafa;
+$black:  #030303;
+$light-grey: #dadada;
+$medium-grey: #999999;
+$dark-grey: #333333;
+$primary-dark: #03045e;
+$primary: #023e8a;
+$primary-light: #00b4d8;
+$accent: #efbdeb;
+$auto-mode: rgb(0, 204, 79);
+$light-mode: rgb(212, 206, 139);
+$dark-mode: rgb(0, 49, 99);
+
+$ff-body: "Roboto", Arial, Helvetica, sans-serif;
+$ff-heading: "Montserrat", Arial, Helvetica, sans-serif;
+$fw-body: 400;
+$fw-body-bold: 700;
+$fw-heading: 700;
+$fw-heading-thin: 300;
       
